@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+@keyframes fadeInAndGrow {
+  0% {
+    opacity: 0;
+    font-size: 4.5em;
+  }
+  100% {
+    opacity: 1;
+    font-size: 1.5em;
+  }
+}
+.L h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 1.5em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 1s ease-in-out forwards;
+}
+.E h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 1.3s ease-in-out forwards;
+}
+.T h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 1.6s ease-in-out forwards;
+}
+.S h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 1.9s ease-in-out forwards;
+}
+.T_2 h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 2.2s ease-in-out forwards;
+}
+.Y h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 2.5s ease-in-out forwards;
+}
+.P h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 2.8s ease-in-out forwards;
+}
+.E_2 h1{
+  color: black;
+  position: absolute;
+  padding-bottom: 11%;
+  font-size: 2em;
+  font-family: 'Chivo', sans-serif; 
+  font-weight: 200;
+  opacity: 0;
+  animation: fadeInAndGrow 0.8s 3.1s ease-in-out forwards;
+}
+
+.main_container{ 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40%;
+  height: 30%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: main_container_xchange 1s 5.5s ease-out forwards;
+}
+@keyframes main_container_xchange {
+  to {
+    transform: translate(-43%, -50%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes colorfade {
+  to {
+    width: 0; /* Set the desired final width */
+    margin-left: 12.5%;
+    opacity: 0;
+  }
+}
+@keyframes colorChange {
+  0% {
+      width: 0;
+      background-color: rgba(233, 198, 100, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(233, 198, 100, 255);
+
+  }
+}
+.L::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.L{
+  background-color: transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+@keyframes colorChange2 {
+  0% {
+      width: 0;
+      background-color: rgba(176, 235, 106, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(176, 235, 106, 255);
+      
+
+  }
+}
+.E::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 12.5%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange2 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.E{
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+
+}
+
+
+
+
+@keyframes colorChange3 {
+  0% {
+      width: 0;
+      background-color: rgba(129, 233, 133, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(129, 233, 133, 255);
+
+  }
+}
+.T::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 25%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange3 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.T{
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+@keyframes colorChange4 {
+  0% {
+      width: 0;
+      background-color: rgba(127, 233, 235,255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(127, 233, 235,255);
+
+  }
+}
+.S::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 37.5%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange4 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.S{
+ 
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+@keyframes colorChange5 {
+  0% {
+      width: 0;
+      background-color: rgba(86, 115, 231, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(86, 115, 231, 255);
+
+  }
+}
+.T_2::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 50%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange5 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.T_2{
+  
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+@keyframes colorChange6 {
+  0% {
+      width: 0;
+      background-color: rgba(148, 81, 232, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(148, 81, 232, 255);
+
+  }
+}
+.Y::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 62.5%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange6 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.Y{
+ 
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+@keyframes colorChange7{
+  0% {
+      width: 0;
+      background-color:rgba(238, 88, 94, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(238, 88, 94, 255);
+
+  }
+}
+.P::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 75%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange7 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.P{
+
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+@keyframes colorChange8{
+  0% {
+      width: 0;
+      background-color:rgba(237, 157, 230, 255);
+      
+  }
+  100% {
+      width: 12.5%;
+      background-color: rgba(237, 157, 230, 255);
+
+  }
+}
+.E_2::before {
+  background-color: transparent;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 87.5%;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%;
+  
+  animation: colorChange8 0.8s 3.7s forwards,
+              colorfade 1s 4.3s ease-out forwards;
+  z-index: -1; /* Place the blue block behind the content */
+}
+.E_2{
+
+  background-color:transparent;
+  width: 12.5%;
+  height: 0;
+  padding-top: 12.5%; /* This ensures the height is equal to the width */
+  gap: 0.57%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide any content that may overflow */
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+.inner_L {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  
+  border-radius: 50%;
+  display: inline-block;
+  
+  background-color: rgba(233, 198, 100, 255);
+  animation: fall 1s ease-in forwards, 
+              burst 0.6s 1s forwards;
+}
+@keyframes fall {
+  0% {
+      opacity: 100;
+      transform: translateY(-100vh);
+      }
+  100% {
+      top: 42%;
+      }
+}
+
+@keyframes burst {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+      
+      
+      
+      }
+  100% {
+      transform: scale(3);
+      opacity: 0;
+      }
+}
+
+.inner_E {
+  height: 25px;
+  width: 25px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(176, 235, 106, 255);
+  opacity: 0;
+  
+  animation: fall 1s 0.3s  ease-in forwards, 
+              burst 0.6s 1.3s forwards;
+}
+.inner_T {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(129, 233, 133, 255);
+  opacity: 0;
+  
+  animation: fall 1s 0.6s  ease-in forwards, 
+              burst 0.6s 1.6s forwards;
+}
+.inner_S {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(127, 233, 235,255);
+  opacity: 0;
+  
+  animation: fall 1s 0.9s  ease-in forwards, 
+              burst 0.6s 1.9s forwards;
+}
+.inner_T_2 {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(86, 115, 231, 255);
+  opacity: 0;
+  
+  animation: fall 1s 1.2s  ease-in forwards, 
+              burst 0.6s 2.2s forwards;
+}
+.inner_Y {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  animation-delay: 0.3s;
+  opacity: 0;
+  background-color: rgba(148, 81, 232, 255);
+  animation: fall 1s 1.5s  ease-in forwards, 
+              burst 0.6s 2.5s forwards;
+}
+.inner_P {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(238, 88, 94, 255);
+  opacity: 0;
+  
+  animation: fall 1s 1.8s  ease-in forwards, 
+              burst 0.6s 2.8s forwards;
+}
+.inner_E_2 {
+  height: 25px;
+  width: 25px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(237, 157, 230, 255);
+  opacity: 0;
+  
+  animation: fall 1s 2.1s  ease-in forwards, 
+              burst 0.6s 3.1s forwards;
+}
+
+
+.nothing{
+  animation: main_container_xchange 0.5s 6.5s forwards;
+}
+
+
+
+
+
